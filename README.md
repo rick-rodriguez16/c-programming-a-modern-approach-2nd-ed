@@ -1,1 +1,2 @@
-# c-programming-a-modern-approach-2nd-ed
+#  C Programming A Modern Approach 2nd edition
+## Notes 
