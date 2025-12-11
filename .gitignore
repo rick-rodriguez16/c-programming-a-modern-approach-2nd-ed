@@ -1,0 +1,10 @@
+# ignore .env
+.env
+
+# ignore executables
+*.o
+*.out
+*.exe
+a.out
+
+EOF
