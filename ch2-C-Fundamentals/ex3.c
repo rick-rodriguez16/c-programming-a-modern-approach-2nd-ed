@@ -9,6 +9,7 @@ int main(void) {
     
     double radius = 0;
     printf("Enter the radius of a sphere to find its volume: ");
+    fflush(stdout);
     if (scanf("%lf", &radius) == 1) {
         double volumeOfSphere = 4.0f/3.0f * PI * radius * radius * radius;
         printf("A sphere of radius %f has a volume of approximately %f cubic units.\n", radius, volumeOfSphere);

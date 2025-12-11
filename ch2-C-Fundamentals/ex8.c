@@ -11,6 +11,7 @@ int main(void) {
 
     double loan_amount = 0.0;
     printf("Enter amount of loan: ");
+    fflush(stdout);
     if (scanf("%lf", &loan_amount) != 1) {
         printf("Error entering loan amount.\n");
         return EXIT_FAILURE;
@@ -18,6 +19,7 @@ int main(void) {
 
     double annual_percent_rate = 0.0;
     printf("Enter the annual percent rate: ");
+    fflush(stdout);
     if (scanf("%lf", &annual_percent_rate) != 1) {
         printf("Error entering annual percentage rate.\n");
         return EXIT_FAILURE;
@@ -25,6 +27,7 @@ int main(void) {
 
     double monthly_payment = 0.0;
     printf("Enter monthly payment: ");
+    fflush(stdout);
     if (scanf("%lf", &monthly_payment) != 1) {
         printf("Error entering monthly payment.\n");
         return EXIT_FAILURE;

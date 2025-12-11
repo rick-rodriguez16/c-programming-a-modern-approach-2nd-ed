@@ -11,7 +11,7 @@ int main(void) {
     
     int value = 0;
     printf("Enter a whole dollar amount (no decimals): ");
-
+    fflush(stdout);
     if(scanf("%d", &value) == 1) {
         calculate_bills(value);
     }

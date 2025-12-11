@@ -9,7 +9,7 @@ int main(void) {
     printf("3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6 Polynomial Solver\n");
     printf("---------------------------------------------------\n\n");
     printf("Enter a whole number value for x: ");
-
+    fflush(stdout);
     // yes I know you can use any real number.  Let's keep it simple folks.
 
     int base = 0;

@@ -10,7 +10,7 @@ int main(void) {
     
     double amount = 0;
     printf("Enter an amount: $");
-
+    fflush(stdout);
     if (scanf("%lf", &amount) == 1) {
         double amount_with_tax = (amount * TAX) + amount;
         printf("With %.0lf percent tax added:  $%.2lf\n", TAX * 100, amount_with_tax);

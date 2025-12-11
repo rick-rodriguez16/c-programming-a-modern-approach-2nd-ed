@@ -9,7 +9,7 @@ int main(void) {
     printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 Problem Solver\n");
     printf("---------------------------------------------------\n\n");
     printf("Enter a whole number value for x: ");
-
+    fflush(stdout);
     // yes I know you can use any real number.  Let's keep it simple folks.
 
     int base = 0;
