@@ -23,19 +23,19 @@ int main(void) {
     int date = scanf("%d/%d/%d", &month, &day, &year);
 
     if (date != EXPECTED_DATE_FIELDS) {
-        printf("Error. Invalid input.");
+        printf("Error. Invalid input.\n");
         return EXIT_FAILURE;
     }
 
-    if ((month < MIN_MONTH || month > MAX_MONTH) &&
-        (day < MIN_DAY || day > MAX_DAY) &&
+    if ((month < MIN_MONTH || month > MAX_MONTH) ||
+        (day < MIN_DAY || day > MAX_DAY) ||
         (year <= 0)) {
         
-        printf("Error. Invalid date inputs.");
+        printf("Error. Invalid date inputs.\n");
         return EXIT_FAILURE;
     }
     
-    printf("You entered the date %2d%02d%02d\n", year, month, day);
+    printf("You entered the date %04d%02d%02d\n", year, month, day);
 
     return 0;
 }
