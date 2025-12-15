@@ -3,24 +3,39 @@
 // to yyyymmdd
 
 #include <stdio.h>
+#include <stdlib.h>
 
-#define CORRECT_DATE_INPUT 3
+#define MIN_MONTH 1
+#define MAX_MONTH 12
+#define MIN_DAY 1
+#define MAX_DAY 31
+#define EXPECTED_DATE_FIELDS 3
 
 int main(void) {
 
-    int month = 0;
-    int day = 0;
-    int year = 0;
+    int month = -1;
+    int day = -1;
+    int year = -1;
     
     printf("Enter a date (mm/dd/yyyy): ");
     fflush(stdout);
     
-    if (scanf("%d/%d/%d", &month, &day, &year) == CORRECT_DATE_INPUT) {
-        printf("You entered the date %d%2.2d%2.2d\n", year, month, day);
+    int date = scanf("%d/%d/%d", &month, &day, &year);
+
+    if (date != EXPECTED_DATE_FIELDS) {
+        printf("Error. Invalid input.");
+        return EXIT_FAILURE;
     }
-    else {
-        printf("Error. Invalid input.\n");
+
+    if ((month < MIN_MONTH || month > MAX_MONTH) &&
+        (day < MIN_DAY || day > MAX_DAY) &&
+        (year <= 0)) {
+        
+        printf("Error. Invalid date inputs.");
+        return EXIT_FAILURE;
     }
+    
+    printf("You entered the date %2d%02d%02d\n", year, month, day);
 
     return 0;
 }
