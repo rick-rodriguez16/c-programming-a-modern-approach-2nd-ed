@@ -12,7 +12,7 @@ int main(void) {
     int frac2_numer = -1;
     int frac2_denom = -1;
 
-    printf("Enter two fractions sepratated by a plus sign (example: a/b+x/y): ");
+    printf("Enter two fractions separated by a plus sign (example: a/b+x/y): ");
     fflush(stdout);
 
     int user_input_fields = scanf("%d/%d+%d/%d", &frac1_numer, &frac1_denom, &frac2_numer, &frac2_denom);
