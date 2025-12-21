@@ -22,6 +22,8 @@ int main(void) {
 
     if (phone_number_parts != PARTS_OF_PHONE_NUMBER) {
         puts("Error. Incorrect number of phone number parts.");
+        int clearing_buffer;
+        while ((clearing_buffer = getchar()) != '\n' && clearing_buffer != EOF) {};
         return EXIT_FAILURE;
     }
 
