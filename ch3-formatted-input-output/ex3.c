@@ -24,6 +24,18 @@ int main(void) {
         while((clearing_buffer = getchar()) != '\n' && clearing_buffer != EOF) {};
         return EXIT_FAILURE;
     }
+    
+    if (gsi_prefix < 978 || gsi_prefix > 979) {
+        printf("Error. GSI Prefix should be a 978 or 979.\n");
+        return EXIT_FAILURE;
+    }
+
+    if (group_identifier < 0 || publishers_code < 0 ||
+        item_number < 0 || check_digit < 0) {
+    
+        printf("Error. Invalid ISBN number.");
+        return EXIT_FAILURE;
+    }
 
     printf("GS1 prefix: %d\n", gsi_prefix);
     printf("Group Identifier: %d\n", group_identifier);
