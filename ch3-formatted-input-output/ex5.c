@@ -106,9 +106,11 @@ int main(void) {
         col3_sum == MAGIC_NUMBER && col4_sum == MAGIC_NUMBER &&
         diagonal1_sum == MAGIC_NUMBER && diagonal2_sum == MAGIC_NUMBER) {
         
-        puts("Yours is a Magic Square!");
+        puts("Yours is a magic square!");
+        return EXIT_SUCCESS;
     }
 
+    puts("Yours is not a magic square.");
     return 0;
 }
 
