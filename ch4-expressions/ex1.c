@@ -15,6 +15,8 @@ int main(void) {
 
     if (user_input_field != EXPECTED_FIELDS) {
         puts("Error inputting value.");
+        int clearing_buffer;
+        while((clearing_buffer = getchar()) != '\n' && clearing_buffer != EOF) {}
         return EXIT_FAILURE;
     }
 
