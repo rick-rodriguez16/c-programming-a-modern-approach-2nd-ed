@@ -1,4 +1,6 @@
-# C Exercise Checklist – 13 Rules
+# Book: C Programming: A Modern Approach, 2nd ed. by K.N. King
+
+## C Exercise Checklist – 13 Rules
 
 1. `int main(void)` + `return 0;`
 
