@@ -26,6 +26,10 @@ int main(void) {
         return EXIT_FAILURE;
     }
 
+    if (first_digit < 1) {
+        puts("Error. Number must be between 100 and 999, inclusive.");
+        return EXIT_FAILURE;
+    }
 
     printf("The reversal is: %d%d%d\n", third_digit, second_digit, first_digit);
 
